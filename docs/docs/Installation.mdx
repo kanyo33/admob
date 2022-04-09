@@ -14,6 +14,16 @@ Add your AdMob App ID to `AndroidManifest.xml`, as described in the [Google Mobi
 
 ## iOS Setup
 
+Inside you info.plist in your projects ios folder add:
+
+```bash
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-***********/*********</string>
+<key>GADIsAdManagerApp</key>
+<true />
+```
+The google admob application identifier can be found inside your admob dashboard.
+
 From the command line run (inside the ios folder):
 
 ```bash
